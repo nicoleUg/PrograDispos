@@ -4,6 +4,7 @@ import com.calyrsoft.ucbp1.features.dollar.data.database.dao.IDollarDao
 import com.calyrsoft.ucbp1.features.dollar.data.mapper.toEntity
 import com.calyrsoft.ucbp1.features.dollar.data.mapper.toModel
 import com.calyrsoft.ucbp1.features.dollar.domain.model.DollarModel
+import kotlin.collections.map
 
 class DollarLocalDataSource(
     val dao: IDollarDao
