@@ -82,7 +82,6 @@ val appModule = module {
     factory { FindByNickNameUseCase(get()) }
     viewModel { GithubViewModel(get(), get()) }
 
-    single<IProfileRepository> { ProfileRepository() }
     factory { GetProfileUseCase(get()) }
     viewModel { ProfileViewModel(get()) }
 

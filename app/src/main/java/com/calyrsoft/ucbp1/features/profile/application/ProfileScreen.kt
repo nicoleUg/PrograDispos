@@ -56,22 +56,22 @@ fun ProfileScreen(
                 )
 
                 Text(
-                    text = st.profile.name,
+                    text = st.profile.name.value,
                     style = MaterialTheme.typography.titleMedium
                 )
 
                 Text(
-                    text = st.profile.email,
+                    text = st.profile.email.value,
                     style = MaterialTheme.typography.bodyMedium
                 )
 
                 Text(
-                    text = st.profile.cellphone,
+                    text = st.profile.cellphone.value,
                     style = MaterialTheme.typography.bodyMedium
                 )
 
                 Text(
-                    text = st.profile.summary,
+                    text = st.profile.summary.value,
                     style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.padding(top = 8.dp),
                     textAlign = TextAlign.Center
