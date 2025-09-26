@@ -22,4 +22,7 @@ interface IDollarDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertDollars(lists: List<DollarEntity>)
+
+    @Query("SELECT * FROM dollars ORDER BY timestamp DESC LIMIT 1")
+    suspend fun getLatestDollar(): DollarEntity?
 }

@@ -4,6 +4,7 @@ data class DollarModel(
     var dollarOfficial: String? = null,
     var dollarParallel: String? = null,
 
-    var usdt: String? = null,
-    var usdc: String? = null
+    var dollarUSDT: String? = null,
+    var dollarUSDC: String? = null,
+    var timestamp: Long = 0
 )
